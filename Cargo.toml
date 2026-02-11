@@ -1,0 +1,24 @@
+[package]
+name = "moss-sdk"
+version = "0.1.0"
+edition = "2021"
+authors = ["MOSS Computing <moss@iampass.com>"]
+description = "Cryptographic signing for AI agents using ML-DSA-44 (post-quantum)"
+license = "Proprietary"
+repository = "https://github.com/mosscomputing/moss-rust"
+documentation = "https://docs.rs/moss-sdk"
+readme = "README.md"
+keywords = ["ai", "agents", "cryptography", "signing", "post-quantum"]
+categories = ["cryptography", "authentication"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+base64 = "0.21"
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1.0", features = ["full"] }
+thiserror = "1.0"
+
+[dev-dependencies]
+tokio-test = "0.4"
