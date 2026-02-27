@@ -41,7 +41,7 @@ use thiserror::Error;
 pub const SPEC: &str = "moss-0001";
 pub const VERSION: i32 = 1;
 pub const ALGORITHM: &str = "ML-DSA-44";
-pub const DEFAULT_BASE_URL: &str = "https://moss-api-837703369688.us-central1.run.app";
+pub const DEFAULT_BASE_URL: &str = "https://api.mosscomputing.com";
 
 /// MOSS error type.
 #[derive(Error, Debug)]
